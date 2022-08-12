@@ -48,8 +48,8 @@ public class RetryMqMessage implements Serializable {
         this.id = id;
     }
 
-    public Long getTblChargingId() {
-        return tblChargingId;
+    public String getTblChargingId() {
+        return String.valueOf(tblChargingId);
     }
 
     public void setTblChargingId(Long tblChargingId) {
@@ -104,8 +104,8 @@ public class RetryMqMessage implements Serializable {
         this.partnerId = partnerId;
     }
 
-    public String getShortCode() {
-        return shortCode;
+    public Integer getShortCode() {
+        return Integer.valueOf(shortCode);
     }
 
     public void setShortCode(String shortCode) {

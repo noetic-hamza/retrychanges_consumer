@@ -1,11 +1,9 @@
 package com.example.demo.util;
 
 
-import com.example.demo.Charging;
-import com.example.demo.Repository.TblChargingRepo;
+import com.example.demo.database.Charging;
 import com.example.demo.model.RetryMqMessage;
 //import com.example.demo.TblChargingEntity;
-import com.example.demo.model.TblChargingEntity;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,10 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
-
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
-import java.util.Optional;
 
 @Component
 @Service
